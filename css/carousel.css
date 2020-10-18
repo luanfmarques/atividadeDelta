@@ -1,0 +1,178 @@
+.father-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 45%;
+}
+
+.carousel-divs {
+    height: 460px;
+    background-color: white;
+    position: relative;
+}
+
+.div-h1 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.div-text {
+    font-size: 15px;
+    width: 63%;
+    margin-top: 20px;
+}
+
+.div-box {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 13%;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.truckSVG {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.travellingSVG {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.mapSVG {
+    width: 65px;
+    margin-bottom: 20px;
+}
+
+.img-box {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.4s;
+    height: 100%;
+}
+
+.buttons-container {
+    display: flex;
+    z-index: 1;
+}
+
+.carousel_button {
+    height: 74px;
+    width: 74px;
+    min-width: 70px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    background-color: black;
+    transition: background-color 0.2s ease-in;
+}
+
+.carousel_button img {
+    height: 50%;
+}
+
+.car-limit {
+    background-color: #333333;
+    pointer-events: none;
+}
+
+.carousel-indicator-container {
+    height: 20px;
+    width: 120px;
+    position: absolute;
+    right: 8%;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-indicator {
+    width: 25px;
+    height: 12px;
+    background-color: black;
+    transition: width 0.4s;
+}
+
+.current-slide-bar {
+    background-color:  #FFC502;
+    width: 45px;
+}
+
+
+.current-slide {
+    opacity: 1;
+}
+
+@media (max-width:768px) {
+    .carousel-container > div {
+        flex-direction: column;
+    }
+
+    .rigth-slide {
+        margin-top: 0px !important;
+    }
+
+    .carousel_button {
+        width: 100%;
+    }
+
+    .carousel-img {
+        width: 100%;
+    }
+
+    .carousel-divs {
+        height: 360px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-imgs {
+        height: 200px !important;
+    }
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    margin-top: -65px;
+}
+
+.carousel-container > div {
+    display: flex;
+    max-width: 1200px;
+    flex: 1;
+}
+
+.left-slide {
+    flex: 1;
+}
+
+.rigth-slide {
+    flex: 1;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-img {
+    height: 100%;
+}
+
+.carousel-imgs {
+    position: relative;
+    height: 459px;
+}
